@@ -4,3 +4,10 @@
   padding: 2rem;
   text-align: center;
 }
+
+.imageContainer {
+  display: flex;
+  gap: var(--margin-s);
+  flex-wrap: wrap;
+  justify-content: center;
+}

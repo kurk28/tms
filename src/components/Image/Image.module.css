@@ -1,0 +1,7 @@
+.image {
+  max-width: 80vw;
+  max-height: 25vh;
+  border: 3px solid transparent;
+  box-shadow: 0 1px 20px 10px gray;
+  transition: border-color 0.25s;
+}
