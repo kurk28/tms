@@ -1,54 +1,41 @@
-import { onMount, onCleanup } from 'solid-js';
+import { clsx } from 'clsx';
+import { createSignal } from 'solid-js';
 import styles from './Image.module.css';
-
-export const IMAGE_NAMES = {
-  AC: 'ac.webp',
-  AIRPLANE: 'airplane.webp',
-  APPLE: 'apple.webp',
-  ATM: 'atm.webp',
-  BABY: 'baby.webp',
-  BACON: 'bacon.webp',
-  BALLET: 'ballet.webp',
-  BALLOON: 'balloon.webp',
-  BALLOON_2: 'balloon-2.webp',
-  BAND: 'band.webp',
-  BANANA: 'banana.webp',
-  BEAR: 'bear.webp',
-};
 
 export function Image(props) {
   let imageRef;
-  let clickEventListener;
+  let nameRef;
+  let imageWrapperRef;
 
-  onMount(() => {
-    if (imageRef) {
-      clickEventListener = function (event) {
-        if (event.animationName === styles.rotateImage) {
-          imageRef.classList.remove(styles.rotateImage);
-        }
-      };
-      imageRef.addEventListener('animationend', clickEventListener);
-    }
-  });
-
-  onCleanup(() =>
-    imageRef.removeEventListener('animationend', clickEventListener)
-  );
+  const [isCardOpen, setIsCardOpen] = createSignal(false);
 
   function onClick() {
-    if (imageRef) {
-      imageRef.classList.add(styles.rotateImage);
-    }
+    setIsCardOpen((prev) => !prev);
   }
 
   return (
-    <>
+    <div
+      ref={imageWrapperRef}
+      class={clsx(styles.imageWrapper, {
+        [styles.rotateLeft]: isCardOpen(),
+        [styles.rotateRight]: !isCardOpen(),
+      })}
+      onClick={onClick}
+    >
       <img
         ref={imageRef}
-        src={`../../../public/${props.name}`}
+        src={`../../../public/${props.imgSrc}`}
         class={styles.image}
-        onClick={onClick}
       />
-    </>
+      <div
+        ref={nameRef}
+        class={clsx(styles.name, {
+          [styles.show]: isCardOpen(),
+          [styles.hide]: !isCardOpen(),
+        })}
+      >
+        {props.name}
+      </div>
+    </div>
   );
 }
