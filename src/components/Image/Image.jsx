@@ -1,3 +1,4 @@
+import { onMount, onCleanup } from 'solid-js';
 import styles from './Image.module.css';
 
 export const IMAGE_NAMES = {
@@ -16,9 +17,38 @@ export const IMAGE_NAMES = {
 };
 
 export function Image(props) {
+  let imageRef;
+  let clickEventListener;
+
+  onMount(() => {
+    if (imageRef) {
+      clickEventListener = function (event) {
+        if (event.animationName === styles.rotateImage) {
+          imageRef.classList.remove(styles.rotateImage);
+        }
+      };
+      imageRef.addEventListener('animationend', clickEventListener);
+    }
+  });
+
+  onCleanup(() =>
+    imageRef.removeEventListener('animationend', clickEventListener)
+  );
+
+  function onClick() {
+    if (imageRef) {
+      imageRef.classList.add(styles.rotateImage);
+    }
+  }
+
   return (
     <>
-      <img src={`../../../public/${props.name}`} class={styles.image} />
+      <img
+        ref={imageRef}
+        src={`../../../public/${props.name}`}
+        class={styles.image}
+        onClick={onClick}
+      />
     </>
   );
 }

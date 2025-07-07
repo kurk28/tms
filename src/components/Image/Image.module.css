@@ -4,4 +4,18 @@
   border: 3px solid transparent;
   box-shadow: 0 1px 20px 10px gray;
   transition: border-color 0.25s;
+  cursor: pointer;
+}
+
+.rotateImage {
+  animation: rotateImage 0.3s ease-in-out;
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
 }
