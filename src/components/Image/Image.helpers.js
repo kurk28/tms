@@ -1,4 +1,4 @@
-export const IMAGE_NAMES = {
+export const IMAGE_FILE_NAMES = {
   AC: 'ac.webp',
   AIRPLANE: 'airplane.webp',
   APPLE: 'apple.webp',
@@ -26,3 +26,5 @@ export const IMAGE_GERMAN_NAMES = {
   BANANA: 'die Banane',
   BEAR: 'der Bär',
 };
+
+export const IMAGE_NAMES = Object.keys(IMAGE_FILE_NAMES);

@@ -1,24 +1,43 @@
-import { createSignal } from 'solid-js';
+import { createSignal, For, createRenderEffect } from 'solid-js';
 import './App.css';
 import { Image } from './components/Image/Image';
 import {
-  IMAGE_NAMES,
+  IMAGE_FILE_NAMES,
   IMAGE_GERMAN_NAMES,
+  IMAGE_NAMES,
 } from './components/Image/Image.helpers';
+import { getImageNames, getImageObj } from './App.helper';
 
 function App() {
-  const [count, setCount] = createSignal(0);
+  const [imageNames, setImageNames] = createSignal([]);
+
+  const onChangeBtnClick = () => {
+    const imageNames = getImageNames(IMAGE_NAMES);
+    const imageObjs = getImageObj(
+      imageNames,
+      IMAGE_FILE_NAMES,
+      IMAGE_GERMAN_NAMES
+    );
+    setImageNames(imageObjs);
+  };
+
+  createRenderEffect(() => {
+    if (imageNames.length === 0) {
+      onChangeBtnClick();
+    }
+  });
 
   return (
     <div class="appWrapper">
       <div class="imageContainer">
-        <Image src={IMAGE_NAMES.AC} name={IMAGE_GERMAN_NAMES.AC} />
-        <Image src={IMAGE_NAMES.AIRPLANE} name={IMAGE_GERMAN_NAMES.AIRPLANE} />
-        <Image src={IMAGE_NAMES.APPLE} name={IMAGE_GERMAN_NAMES.APPLE} />
-        <Image src={IMAGE_NAMES.ATM} name={IMAGE_GERMAN_NAMES.ATM} />
+        <For each={imageNames()} fallback={<div>Loading...</div>}>
+          {(item) => <Image src={item.src} name={item.name} />}
+        </For>
       </div>
       <div>
-        <button class={'changeBtn'}>Change images</button>
+        <button onClick={onChangeBtnClick} class={'changeBtn'}>
+          Change images
+        </button>
       </div>
     </div>
   );
