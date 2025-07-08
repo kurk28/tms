@@ -24,7 +24,7 @@ export function Image(props) {
     >
       <img
         ref={imageRef}
-        src={`../../../public/${props.imgSrc}`}
+        src={`../../../public/${props.src}`}
         class={styles.image}
       />
       <div

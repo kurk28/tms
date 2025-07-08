@@ -1,8 +1,16 @@
 #root {
+  box-sizing: border-box;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.appWrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .imageContainer {
@@ -10,4 +18,23 @@
   gap: var(--margin-s);
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: var(--margin-xl);
+}
+
+.changeBtn {
+  width: 200px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: var(--margin-xs);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-bottom: var(--margin-xl);
+}
+
+.changeBtn:active {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }

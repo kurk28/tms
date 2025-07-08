@@ -10,11 +10,16 @@ function App() {
   const [count, setCount] = createSignal(0);
 
   return (
-    <div class="imageContainer">
-      <Image imgSrc={IMAGE_NAMES.AC} name={IMAGE_GERMAN_NAMES.AC} />
-      <Image imgSrc={IMAGE_NAMES.AIRPLANE} name={IMAGE_GERMAN_NAMES.AIRPLANE} />
-      <Image imgSrc={IMAGE_NAMES.APPLE} name={IMAGE_GERMAN_NAMES.APPLE} />
-      <Image imgSrc={IMAGE_NAMES.ATM} name={IMAGE_GERMAN_NAMES.ATM} />
+    <div class="appWrapper">
+      <div class="imageContainer">
+        <Image src={IMAGE_NAMES.AC} name={IMAGE_GERMAN_NAMES.AC} />
+        <Image src={IMAGE_NAMES.AIRPLANE} name={IMAGE_GERMAN_NAMES.AIRPLANE} />
+        <Image src={IMAGE_NAMES.APPLE} name={IMAGE_GERMAN_NAMES.APPLE} />
+        <Image src={IMAGE_NAMES.ATM} name={IMAGE_GERMAN_NAMES.ATM} />
+      </div>
+      <div>
+        <button class={'changeBtn'}>Change images</button>
+      </div>
     </div>
   );
 }
