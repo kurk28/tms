@@ -22,7 +22,7 @@ export const IMAGE_FILE_NAMES = {
   BROOM: 'broom.webp',
   BUS: 'bus.webp',
   BUTTERFLY: 'butterfly.webp',
-  BIKE: 'bycicle.webp',
+  BIKE: 'bike.webp',
   CAMERA: 'camera.webp',
   CAMERA_2: 'camera-2.webp',
   CAR: 'car.webp',
