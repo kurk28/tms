@@ -22,7 +22,7 @@ export function Image(props) {
       })}
       onClick={onClick}
     >
-      <img ref={imageRef} src={`/${props.src}`} class={styles.image} />
+      <img ref={imageRef} src={`/images/${props.src}`} class={styles.image} />
       <div
         ref={nameRef}
         class={clsx(styles.name, {
