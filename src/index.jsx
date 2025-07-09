@@ -1,8 +1,15 @@
 /* @refresh reload */
-import { render } from 'solid-js/web'
-import './index.css'
-import App from './App.jsx'
+import { render } from 'solid-js/web';
+import './index.css';
+import App from './App.jsx';
 
-const root = document.getElementById('root')
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('/serviceWorker.js')
+    .then((reg) => console.info('Service worker registered', reg))
+    .catch((error) => console.error('Error on registration', error));
+}
 
-render(() => <App />, root)
+const root = document.getElementById('root');
+
+render(() => <App />, root);
