@@ -1,6 +1,7 @@
 {
   "name": "Was ist passiert?",
   "short_name": "WIP",
+  "start_url": ".",
   "icons": [{
     "src": "public/icons/320.png",
     "type": "image/png",
