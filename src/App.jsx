@@ -1,5 +1,6 @@
 import { createSignal, For, createRenderEffect } from 'solid-js';
 import './App.css';
+import { Header } from './components/Header/Header';
 import { Image } from './components/Image/Image';
 import {
   IMAGE_FILE_NAMES,
@@ -29,6 +30,9 @@ function App() {
 
   return (
     <div class="appWrapper">
+      <div class="headerWrapper">
+        <Header />
+      </div>
       <div class="imageContainer">
         <For each={imageNames()} fallback={<div>Loading...</div>}>
           {(item) => <Image src={item.src} name={item.name} />}

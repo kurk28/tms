@@ -1,8 +1,10 @@
 #root {
   box-sizing: border-box;
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 1rem;
+  min-width: 320px;
+  max-width: 1280px;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -11,6 +13,10 @@
   height: 100%;
   flex-direction: column;
   justify-content: center;
+}
+
+.headerWrapper {
+  margin-bottom: var(--margin-xl);
 }
 
 .imageContainer {
