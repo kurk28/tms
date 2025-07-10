@@ -35,5 +35,5 @@ self.addEventListener('activate', (event) => {
   console.info('Service worker activated');
 });
 self.addEventListener('fetch', function (event) {
-  event.respondWith(checkCache(event));
+  if (event.request.url.endsWith('.webp')) event.respondWith(checkCache(event));
 });
