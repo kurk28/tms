@@ -1,0 +1,19 @@
+{
+  "name": "Was ist passiert?",
+  "short_name": "WIP",
+  "icons": [{
+    "src": "public/icons/320.png",
+    "type": "image/png",
+    "size": "320x320"
+  }, {
+    "src": "public/icons/640.png",
+    "type": "image/png",
+    "size": "640x640"
+  }, {
+    "src": "public/icons/1024.png",
+    "type": "image/png",
+    "size": "1024x1024"
+  }],
+  "id": "was-ist-passiert",
+  "background_color": "#007acc"
+}
