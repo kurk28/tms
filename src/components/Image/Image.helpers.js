@@ -370,4 +370,4 @@ export const IMAGE_GERMAN_NAMES = {
   YIN_YANG: 'das Yin und Yang',
 };
 
-export const IMAGE_NAMES = Object.keys(IMAGE_FILE_NAMES);
+export const IMAGE_NAMES_ARR = Object.keys(IMAGE_FILE_NAMES);

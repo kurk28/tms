@@ -6,21 +6,50 @@ import { Image } from './components/Image/Image';
 import {
   IMAGE_FILE_NAMES,
   IMAGE_GERMAN_NAMES,
-  IMAGE_NAMES,
+  IMAGE_NAMES_ARR,
 } from './components/Image/Image.helpers';
-import { getImageNames, getImageObj } from './App.helper';
+import {
+  getImageNames,
+  getImageObj,
+  getChunks,
+  IMAGE_CHUNK_LENGTH,
+} from './App.helper';
+import { getImageEndpoint } from './endpoints/endpoints';
 
 function App() {
   const [imageNames, setImageNames] = createSignal([]);
 
   const onChangeBtnClick = () => {
-    const imageNames = getImageNames(IMAGE_NAMES);
+    const imageNames = getImageNames(IMAGE_NAMES_ARR);
     const imageObjs = getImageObj(
       imageNames,
       IMAGE_FILE_NAMES,
       IMAGE_GERMAN_NAMES
     );
     setImageNames(imageObjs);
+  };
+
+  const cacheAllImages = async (images) => {
+    const notCached = [];
+    const chunks = getChunks(images, IMAGE_CHUNK_LENGTH);
+    for (let i = 0; i < chunks.length; i++) {
+      const promises = chunks[i].map((fileName) =>
+        fetch(getImageEndpoint(fileName))
+      );
+      const result = await Promise.allSettled(promises);
+      result.forEach(
+        (r, index) =>
+          r.status === 'rejected' && notCached.push(chunks[i][index])
+      );
+    }
+
+    return notCached;
+  };
+
+  const onCacheImagesClick = async () => {
+    const notCachedImages = await cacheAllImages(IMAGE_NAMES_ARR);
+    if (notCachedImages.length !== 0)
+      console.warn('Not all images were cachedi: ', notCachedImages);
   };
 
   createRenderEffect(() => {
@@ -49,7 +78,7 @@ function App() {
         </div>
       </div>
       <div class="footerWrapper">
-        <Footer />
+        <Footer onCacheImagesClick={onCacheImagesClick} />
       </div>
     </>
   );

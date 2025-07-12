@@ -1,3 +1,5 @@
+export const IMAGE_CHUNK_LENGTH = 10;
+
 export function getImageNames(imageNames) {
   const names = [];
   while (names.length !== 6) {
@@ -16,4 +18,10 @@ export function getImageObj(names, imageFileNames, imageGerNames) {
   }
 
   return imageObj;
+}
+
+export function getChunks(array, size) {
+  return Array.from({ length: Math.ceil(array.length / size) }, (_, i) =>
+    array.slice(i * size, i * size + size)
+  );
 }
