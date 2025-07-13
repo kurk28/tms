@@ -41,6 +41,7 @@ export function Image(props) {
         })}
         onError={onErrorImageLoad}
         onLoad={onMainImageLoad}
+        alt={props.name}
       />
       <div
         class={clsx(styles.name, {
