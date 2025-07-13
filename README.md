@@ -1,21 +1,28 @@
+# Was ist passiert?
+
+Tell me a story, relying on the images you see!
+
+## Preview
+
+https://tms.askdubovik.workers.dev/
+
+
 ## Usage
 
 ```bash
-$ npm install # or pnpm install or yarn install
+$ pnpm install # or pnpm install or yarn install
 ```
-
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm run dev`
+### `pnpm run dev`
 
 Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+Open [http://localhost:6464](http://localhost:6464) to view it in the browser.
 
-### `npm run build`
+### `pnpm run build`
 
 Builds the app for production to the `dist` folder.<br>
 It correctly bundles Solid in production mode and optimizes the build for the best performance.
@@ -23,6 +30,3 @@ It correctly bundles Solid in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-## Deployment
-
-Learn more about deploying your application with the [documentations](https://vite.dev/guide/static-deploy.html)
