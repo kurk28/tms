@@ -31,23 +31,26 @@ function fetchData(request, event) {
     });
 }
 
-self.addEventListener('install', (event) =>
-  console.info('Service worker installed')
-);
+self.addEventListener('install', (event) => {
+  console.info('Service worker installed');
+  self.skipWaiting();
+});
 
 self.addEventListener('activate', (event) => {
   console.info('Service worker activated');
   event.waitUntil(
-    caches
-      .keys()
-      .then((keys) =>
-        Promise.allSettled(
-          keys
-            .filter((key) => key !== CACHE_NAME)
-            .map((key) => caches.delete(key))
+    self.clients.claim().then(() =>
+      caches
+        .keys()
+        .then((keys) =>
+          Promise.allSettled(
+            keys
+              .filter((key) => key !== CACHE_NAME)
+              .map((key) => caches.delete(key))
+          )
         )
-      )
-      .then((result) => console.info('Cache cleanup result:', result))
+        .then((result) => console.info('Cache cleanup result:', result))
+    )
   );
 });
 
