@@ -6,14 +6,6 @@ function putInCache(req, res) {
   return caches.open(CACHE_NAME).then((cache) => cache.put(req, res));
 }
 
-function checkCache(request, event) {
-  return caches.match(request).then((cachedData) => {
-    if (cachedData) return cachedData;
-
-    return fetchData(request, event);
-  });
-}
-
 function fetchData(request, event) {
   return fetch(request)
     .then((data) => {
@@ -26,11 +18,15 @@ function fetchData(request, event) {
     })
     .catch((err) => {
       console.warn('Fetch failed:', err);
-      return new Response('Network error happened', {
-        status: 408,
-        headers: {
-          'Content-Type': 'text/plain',
-        },
+      return caches.match(request).then((cachedData) => {
+        if (cachedData) return cachedData;
+
+        return new Response('Network error happened', {
+          status: 408,
+          headers: {
+            'Content-Type': 'text/plain',
+          },
+        });
       });
     });
 }
@@ -57,15 +53,15 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', function (event) {
   const url = event.request.url;
-  const shouldBeCached =
-    url.endsWith('.webp') ||
-    url.endsWith('.png') ||
-    url.endsWith('.css') ||
-    url.endsWith('.html') ||
-    url.endsWith('.js');
-  const response = shouldBeCached
-    ? checkCache(event.request, event)
-    : fetchData(event.request, event);
+  const shouldBeCached = url.endsWith('.webp') || url.endsWith('.png');
 
-  event.respondWith(response);
+  if (shouldBeCached) {
+    event.respondWith(
+      caches.match(event.request).then((cachedData) => {
+        return cachedData ? cachedData : fetchData(event.request, event);
+      })
+    );
+  } else {
+    event.respondWith(fetchData(event.request, event));
+  }
 });
