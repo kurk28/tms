@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: var(--margin-xl);
+  margin-top: 3.5rem;
 }
 
 .game {
@@ -24,16 +24,16 @@
 }
 
 .headerWrapper {
-  padding-top: var(--padding-m);
+  padding-top: 2rem;
 }
 
 .footerWrapper {
-  margin-top: var(--padding-m);
+  margin-top: 2rem;
 }
 
 .imageContainer {
   display: flex;
-  gap: var(--margin-s);
+  gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -48,14 +48,14 @@
   border: 1px solid transparent;
   box-shadow: 2px 2px 5px var(--bright-blue);
   background-color: var(--bright-blue);
-  padding: var(--margin-xs);
+  padding: 0.8rem;
   color: var(--white-color);
   font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
-  margin-bottom: var(--margin-xl);
+  margin-bottom: 3.5rem;
 }
 
 .changeBtn:active {

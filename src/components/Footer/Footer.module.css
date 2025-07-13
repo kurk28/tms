@@ -1,6 +1,6 @@
 .footer {
   font-size: 0.8rem;
-  margin-bottom: var(--margin-xs);
+  margin-bottom: 0.8rem;
 }
 
 .text {
@@ -9,7 +9,7 @@
 
 .cacheInfo {
   display: inline-block;
-  margin-right: var(--margin-xs);
+  margin-right: 0.8rem;
 }
 
 .cacheBtn {
@@ -29,6 +29,6 @@
 
 .imageSize {
   display: inline-block;
-  margin-left: var(--margin-xs);
+  margin-left: 0.5rem;
   color: var(--terra-red);
 }

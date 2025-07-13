@@ -113,4 +113,6 @@
   background-color: var(--white-color);
   word-break: break-all;
   overflow-y: auto;
+  font-size: 1.4rem;
+  padding: 0 0.25rem;
 }
