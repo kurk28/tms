@@ -4,22 +4,21 @@ import styles from './Image.module.css';
 import { IMAGE_BORDER_COLOR } from './Image.helpers';
 
 export function Image(props) {
-  let imageRef;
-  let nameRef;
-  let imageWrapperRef;
-
-  const fallbackSrc = 'icons/320.png';
+  const fallbackImgSrc = 'icons/320.png';
 
   const [isCardOpen, setIsCardOpen] = createSignal(false);
   const [hasError, setHasError] = createSignal(false);
+  const [isMainImageVisible, setIsMainImageVisible] = createSignal(false);
 
-  function onClick() {
-    setIsCardOpen((prev) => !prev);
-  }
+  const onClick = () => setIsCardOpen((prev) => !prev);
+  const onMainImageLoad = () => {
+    setIsMainImageVisible(true);
+    setHasError(false);
+  };
+  const onErrorImageLoad = () => setHasError(true);
 
   return (
     <div
-      ref={imageWrapperRef}
       class={clsx(styles.imageWrapper, {
         [styles.rotateLeft]: isCardOpen(),
         [styles.rotateRight]: !isCardOpen(),
@@ -31,15 +30,19 @@ export function Image(props) {
       onClick={onClick}
     >
       <img
-        ref={imageRef}
-        src={hasError() ? fallbackSrc : props.src}
-        class={styles.image}
-        onError={() => {
-          setHasError(true);
-        }}
+        src={fallbackImgSrc}
+        class={clsx(styles.image, { [styles.hidden]: isMainImageVisible() })}
+        onError={onErrorImageLoad}
+      />
+      <img
+        src={props.src}
+        class={clsx(styles.image, {
+          [styles.hidden]: !isMainImageVisible() || hasError(),
+        })}
+        onError={onErrorImageLoad}
+        onLoad={onMainImageLoad}
       />
       <div
-        ref={nameRef}
         class={clsx(styles.name, {
           [styles.show]: isCardOpen(),
           [styles.hide]: !isCardOpen(),

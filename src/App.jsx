@@ -58,7 +58,7 @@ function App() {
       <div class="bodyWrapper">
         <div class="game">
           <div class="imageContainer">
-            <For each={images()} fallback={<div>Loading...</div>}>
+            <For each={images()}>
               {(item) => (
                 <Image src={item.src} name={item.name} color={item.color} />
               )}
