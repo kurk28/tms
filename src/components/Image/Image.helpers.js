@@ -148,6 +148,7 @@ export const IMAGES = {
     fileName: 'chocolate-bar.webp',
   },
   CHRISTMAS: {
+    gerName: 'das Weihnachten',
     fileName: 'christmas.webp',
   },
   CLEF: {
@@ -483,6 +484,7 @@ export const IMAGES = {
     fileName: 'ping-pong.webp',
   },
   POINT: {
+    gerName: 'die Stelle',
     fileName: 'point.webp',
   },
   POOL: {
@@ -546,6 +548,7 @@ export const IMAGES = {
     fileName: 'sausage.webp',
   },
   SHOE: {
+    gername: 'die Schuhe',
     fileName: 'shoes.webp',
   },
   SHORTS: {
