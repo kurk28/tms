@@ -8,7 +8,10 @@ export function Image(props) {
   let nameRef;
   let imageWrapperRef;
 
+  const fallbackSrc = 'icons/320.png';
+
   const [isCardOpen, setIsCardOpen] = createSignal(false);
+  const [hasError, setHasError] = createSignal(false);
 
   function onClick() {
     setIsCardOpen((prev) => !prev);
@@ -27,7 +30,14 @@ export function Image(props) {
       })}
       onClick={onClick}
     >
-      <img ref={imageRef} src={props.src} class={styles.image} />
+      <img
+        ref={imageRef}
+        src={hasError() ? fallbackSrc : props.src}
+        class={styles.image}
+        onError={() => {
+          setHasError(true);
+        }}
+      />
       <div
         ref={nameRef}
         class={clsx(styles.name, {
