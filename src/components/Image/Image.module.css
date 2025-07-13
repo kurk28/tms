@@ -2,7 +2,22 @@
   position: relative;
   cursor: pointer;
   border: 3px solid transparent;
-  box-shadow: 0 1px 20px 10px gray;
+}
+
+.borderRed {
+  box-shadow: 0 1px 10px 5px var(--terra-red);
+}
+
+.borderBlue {
+  box-shadow: 0 1px 10px 5px var(--bright-blue);
+}
+
+.borderGreen {
+  box-shadow: 0 1px 10px 5px var(--teal-green);
+}
+
+.borderGrey {
+  box-shadow: 0 1px 10px 5px var(--warm-gray);
 }
 
 .image {

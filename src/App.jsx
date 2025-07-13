@@ -3,13 +3,9 @@ import './App.css';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import { Image } from './components/Image/Image';
+import { IMAGE_NAMES_ARR, IMAGES } from './components/Image/Image.helpers';
 import {
-  IMAGE_FILE_NAMES,
-  IMAGE_GERMAN_NAMES,
-  IMAGE_NAMES_ARR,
-} from './components/Image/Image.helpers';
-import {
-  getImageNames,
+  getRandomImageNames,
   getImageObj,
   getChunks,
   IMAGE_CHUNK_LENGTH,
@@ -17,16 +13,12 @@ import {
 import { getImageEndpoint } from './endpoints/endpoints';
 
 function App() {
-  const [imageNames, setImageNames] = createSignal([]);
+  const [images, setImages] = createSignal([]);
 
   const onChangeBtnClick = () => {
-    const imageNames = getImageNames(IMAGE_NAMES_ARR);
-    const imageObjs = getImageObj(
-      imageNames,
-      IMAGE_FILE_NAMES,
-      IMAGE_GERMAN_NAMES
-    );
-    setImageNames(imageObjs);
+    const imageNames = getRandomImageNames(IMAGE_NAMES_ARR);
+    const imageObjs = getImageObj(imageNames, IMAGES);
+    setImages(imageObjs);
   };
 
   const cacheAllImages = async (images) => {
@@ -53,7 +45,7 @@ function App() {
   };
 
   createRenderEffect(() => {
-    if (imageNames.length === 0) {
+    if (images.length === 0) {
       onChangeBtnClick();
     }
   });
@@ -66,8 +58,10 @@ function App() {
       <div class="bodyWrapper">
         <div class="game">
           <div class="imageContainer">
-            <For each={imageNames()} fallback={<div>Loading...</div>}>
-              {(item) => <Image src={item.src} name={item.name} />}
+            <For each={images()} fallback={<div>Loading...</div>}>
+              {(item) => (
+                <Image src={item.src} name={item.name} color={item.color} />
+              )}
             </For>
           </div>
           <div class="changeBtnWrapper">
