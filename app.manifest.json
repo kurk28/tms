@@ -16,5 +16,6 @@
     "size": "1024x1024"
   }],
   "id": "was-ist-passiert",
-  "background_color": "#007acc"
+  "background_color": "#007acc",
+  "display": "standalone"
 }
