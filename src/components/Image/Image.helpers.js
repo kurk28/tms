@@ -548,7 +548,7 @@ export const IMAGES = {
     fileName: 'sausage.webp',
   },
   SHOE: {
-    gername: 'die Schuhe',
+    gerName: 'die Schuhe',
     fileName: 'shoes.webp',
   },
   SHORTS: {
