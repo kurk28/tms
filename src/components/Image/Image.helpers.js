@@ -328,7 +328,7 @@ export const IMAGES = {
     fileName: 'heels.webp',
   },
   HOLLYWOOD: {
-    gerName: 'Hollywood',
+    gerName: '​der Berühmtheit',
     fileName: 'hollywood.webp',
   },
   HONEY: {
@@ -600,7 +600,7 @@ export const IMAGES = {
     fileName: 'stand-up.webp',
   },
   STRONG: {
-    gerName: 'stark',
+    gerName: 'die Stärke',
     fileName: 'strong.webp',
   },
   SUNGLASSES: {
@@ -700,7 +700,7 @@ export const IMAGES = {
     fileName: 'watermelon.webp',
   },
   WELCOME: {
-    gerName: 'willkommen',
+    gerName: 'die Fußmatte',
     fileName: 'welcome.webp',
   },
   WHISKY: {
