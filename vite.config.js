@@ -14,6 +14,20 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        serviceWorker: resolve(__dirname, 'serviceWorker.js'),
+      },
+      output: {
+        entryFileNames: (chunkInfo) => {
+          if (chunkInfo.name === 'serviceWorker') {
+            return 'assets/serviceWorker.js';
+          }
+          return 'assets/[name]-[hash].js';
+        },
+      },
+    },
   },
   resolve: {
     alias: {
