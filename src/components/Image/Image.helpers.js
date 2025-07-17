@@ -279,6 +279,10 @@ export const IMAGES = {
     gerName: 'die Emotion',
     fileName: 'emotion.webp',
   },
+  FENCE: {
+    gerName: 'der Zaun',
+    fileName: 'fence.webp',
+  },
   FIRE: {
     gerName: 'das Feuer',
     fileName: 'fire.webp',
@@ -442,6 +446,10 @@ export const IMAGES = {
   MONEYBOX: {
     gerName: 'die Sparbüchse',
     fileName: 'moneybox.webp',
+  },
+  MOSQUITO: {
+    gerName: 'der Moskito',
+    fileName: 'mosquito.webp',
   },
   MOUNT: {
     gerName: 'der Berg',
