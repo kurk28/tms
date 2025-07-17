@@ -13,7 +13,10 @@ import {
 import { getImageEndpoint } from './endpoints/endpoints';
 
 function App() {
+  const totalImagesCount = import.meta.env.VITE_IMAGE_COUNT;
+  const imageFolderSize = import.meta.env.VITE_IMAGE_FOLDER_SIZE;
   const [images, setImages] = createSignal([]);
+  const [cachedImagesCount, setCachedImagesCount] = createSignal(0);
 
   const onChangeBtnClick = () => {
     const imageNames = getRandomImageNames(IMAGE_NAMES_ARR);
@@ -25,13 +28,14 @@ function App() {
     const notCached = [];
     const chunks = getChunks(images, IMAGE_CHUNK_LENGTH);
     for (let i = 0; i < chunks.length; i++) {
-      const promises = chunks[i].map((fileName) =>
-        fetch(getImageEndpoint(fileName))
-      );
+      const promises = chunks[i].map((fileName) => {
+        return fetch(getImageEndpoint(IMAGES[fileName].fileName));
+      });
       const result = await Promise.allSettled(promises);
-      result.forEach(
-        (r, index) =>
-          r.status === 'rejected' && notCached.push(chunks[i][index])
+      result.forEach((r, index) =>
+        r.status === 'rejected'
+          ? notCached.push(chunks[i][index])
+          : setCachedImagesCount((prev) => ++prev)
       );
     }
 
@@ -72,7 +76,12 @@ function App() {
         </div>
       </div>
       <div class="footerWrapper">
-        <Footer onCacheImagesClick={onCacheImagesClick} />
+        <Footer
+          onCacheImagesClick={onCacheImagesClick}
+          totalImagesCount={totalImagesCount}
+          cachedImagesCount={cachedImagesCount()}
+          imageFolderSize={imageFolderSize}
+        />
       </div>
     </>
   );

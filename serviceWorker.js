@@ -1,6 +1,7 @@
 // version 0.0.1
 
 const CACHE_NAME = 'v0';
+let count = 0;
 
 function putInCache(req, res) {
   return caches.open(CACHE_NAME).then((cache) => cache.put(req, res));
@@ -31,7 +32,7 @@ function fetchData(request, event) {
     });
 }
 
-self.addEventListener('install', (event) => {
+self.addEventListener('install', () => {
   console.info('Service worker installed');
   self.skipWaiting();
 });

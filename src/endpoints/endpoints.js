@@ -1,3 +1,3 @@
 export function getImageEndpoint(imageFileName) {
-  return `/images/${imageFileName}`;
+  return `images/${imageFileName}`;
 }

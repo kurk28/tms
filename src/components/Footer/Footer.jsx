@@ -16,7 +16,12 @@ export function Footer(props) {
       <button class={styles.cacheBtn} onClick={props.onCacheImagesClick}>
         click here
       </button>
-      <span class={styles.imageSize}>[3.2 MB!]</span>
+      <span class={styles.imageSize}>{`[${props.imageFolderSize}]`}</span>
+      {props.cachedImagesCount && (
+        <span class={styles.filesCachedWrapper}>
+          Files cached: {props.totalImagesCount} / {props.cachedImagesCount}
+        </span>
+      )}
     </footer>
   );
 }

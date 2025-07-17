@@ -55,6 +55,10 @@ export const IMAGES = {
     gerName: 'der Vogel',
     fileName: 'bird.webp',
   },
+  BOAT: {
+    gerName: 'der Kahn',
+    fileName: 'boat.webp',
+  },
   BOOK: {
     gerName: 'das Buch',
     fileName: 'book.webp',
@@ -82,6 +86,10 @@ export const IMAGES = {
   BROOM: {
     gerName: 'der Besen',
     fileName: 'broom.webp',
+  },
+  BULB: {
+    gerName: 'die Birne',
+    fileName: 'bulb.webp',
   },
   BUS: {
     gerName: 'der Bus',
@@ -235,6 +243,10 @@ export const IMAGES = {
     gerName: 'die Disko',
     fileName: 'disco.webp',
   },
+  DRAGON: {
+    gerName: 'der Drache',
+    fileName: 'dragon.webp',
+  },
   THERMOMETER: {
     gerName: 'das Thermometer',
     fileName: 'thermometer.webp',
@@ -250,6 +262,10 @@ export const IMAGES = {
   DOLL: {
     gerName: 'die Puppe',
     fileName: 'doll.webp',
+  },
+  DRESS: {
+    gerName: 'die Kleidung',
+    fileName: 'dress.webp',
   },
   DUCK: {
     gerName: 'die Ente',
@@ -661,7 +677,7 @@ export const IMAGES = {
   },
   TRAFFIC_LIGHT: {
     gerName: 'die Ampel',
-    fileName: 'traffic_light.webp',
+    fileName: 'traffic-light.webp',
   },
   TRAM: {
     gerName: 'die Straßenbahn',
