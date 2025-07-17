@@ -2,10 +2,11 @@ import { IMAGE_BORDER_COLOR } from './components/Image/Image.helpers';
 import { getImageEndpoint } from './endpoints/endpoints';
 
 export const IMAGE_CHUNK_LENGTH = 10;
+const MAX_IMAGE_ON_PAGE = 8;
 
 export function getRandomImageNames(imageNames) {
   const names = [];
-  while (names.length !== 6) {
+  while (names.length < MAX_IMAGE_ON_PAGE) {
     const index = Math.floor(Math.random() * imageNames.length);
     if (names.indexOf(imageNames[index]) === -1) {
       names.push(imageNames[index]);
