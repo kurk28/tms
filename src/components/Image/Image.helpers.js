@@ -126,10 +126,6 @@ export const IMAGES = {
     gerName: 'die Burg',
     fileName: 'castle.webp',
   },
-  CASTLE_2: {
-    gerName: 'die Burg',
-    fileName: 'castle-2.webp',
-  },
   CAT: {
     gerName: 'die Katze',
     fileName: 'cat.webp',
@@ -175,12 +171,8 @@ export const IMAGES = {
     fileName: 'clock.webp',
   },
   COFFEE: {
-    gerName: 'der Frappé',
-    fileName: 'coffee.webp',
-  },
-  COFFEE_2: {
     gerName: 'der Kaffee',
-    fileName: 'coffee-2.webp',
+    fileName: 'coffee.webp',
   },
   BRUSH: {
     gerName: 'der Bürste',
@@ -207,7 +199,7 @@ export const IMAGES = {
     fileName: 'controller.webp',
   },
   COURIER: {
-    gerName: 'der Kurier',
+    gerName: 'der Paketzusteller',
     fileName: 'courier.webp',
   },
   COW: {
@@ -263,7 +255,7 @@ export const IMAGES = {
     fileName: 'document.webp',
   },
   DOCTOR: {
-    gerName: 'der Arzt',
+    gerName: 'der Ärztin',
     fileName: 'doctor.webp',
   },
   DOLL: {
@@ -330,10 +322,6 @@ export const IMAGES = {
     gerName: 'der Globus',
     fileName: 'globe.webp',
   },
-  GUN: {
-    gerName: 'die Pistole',
-    fileName: 'gun.webp',
-  },
   HAMBURGER: {
     gerName: 'der Hamburger',
     fileName: 'hamburger.webp',
@@ -374,10 +362,6 @@ export const IMAGES = {
     gerName: 'das Eis',
     fileName: 'ice-cream.webp',
   },
-  ICE_CREAM_2: {
-    gerName: 'das Eis',
-    fileName: 'ice-cream-2.webp',
-  },
   JACKET: {
     gerName: 'die Jacke',
     fileName: 'jacket.webp',
@@ -414,14 +398,10 @@ export const IMAGES = {
     gerName: 'der Laptop',
     fileName: 'laptop.webp',
   },
-  LAUNDRY: {
-    gerName: 'die Wäsche',
-    fileName: 'laundry.webp',
-  },
-  DEGREE: {
-    gerName: 'die Prüfung bestanden / der Abschluss',
-    fileName: 'learning.webp',
-  },
+  // DEGREE: {
+  //   gerName: 'die Prüfung bestanden / der Abschluss',
+  //   fileName: 'learning.webp',
+  // },
   LIKE: {
     gerName: 'das gefällt mir',
     fileName: 'like.webp',
@@ -474,17 +454,9 @@ export const IMAGES = {
     gerName: 'die Nachrichten',
     fileName: 'news.webp',
   },
-  NEWS_2: {
-    gerName: 'die Nachrichten',
-    fileName: 'news-2.webp',
-  },
   NIGHT: {
     gerName: 'die Nacht',
     fileName: 'night.webp',
-  },
-  PAWN: {
-    gerName: 'die Spielfigur',
-    fileName: 'pawn.webp',
   },
   PARTY: {
     gerName: 'die Party',
@@ -526,25 +498,13 @@ export const IMAGES = {
     gerName: 'der Kot',
     fileName: 'poop.webp',
   },
-  PRESSURE: {
-    gerName: 'der Druck',
-    fileName: 'pressure.webp',
-  },
   PROTEIN_BAR: {
     gerName: 'der Proteinriegel',
     fileName: 'protein-bar.webp',
   },
-  QUEEN: {
-    gerName: 'die Königin',
-    fileName: 'queen.webp',
-  },
   QUESTION: {
     gerName: 'die Frage',
     fileName: 'question.webp',
-  },
-  RACE: {
-    gerName: 'das Rennen',
-    fileName: 'race.webp',
   },
   RESTAURANT: {
     gerName: 'das Restaurant',
@@ -553,10 +513,6 @@ export const IMAGES = {
   RING: {
     gerName: 'der Ring',
     fileName: 'ring.webp',
-  },
-  ROBOT_MAN: {
-    gerName: 'der Robotermann',
-    fileName: 'robot-man.webp',
   },
   ROSE: {
     gerName: 'die Rose',
@@ -598,10 +554,6 @@ export const IMAGES = {
     gerName: 'der Rock',
     fileName: 'skirt.webp',
   },
-  SKIRT_2: {
-    gerName: 'der Rock',
-    fileName: 'skirt-2.webp',
-  },
   SKUNK: {
     gerName: 'das Stinktier',
     fileName: 'skunk.webp',
@@ -609,10 +561,6 @@ export const IMAGES = {
   SNEAKERS: {
     gerName: 'die Turnschuhe',
     fileName: 'sneakers.webp',
-  },
-  SNEAKERS_2: {
-    gerName: 'die Turnschuhe',
-    fileName: 'sneakers-2.webp',
   },
   SOAP: {
     gerName: 'die Seife',
@@ -658,10 +606,6 @@ export const IMAGES = {
     gerName: 'die Medizin',
     fileName: 'tablets.webp',
   },
-  TANK: {
-    gerName: 'der Panzer',
-    fileName: 'tank.webp',
-  },
   TANDEM: {
     gerName: 'das Tandem',
     fileName: 'tandem.webp',
@@ -669,10 +613,6 @@ export const IMAGES = {
   TAXI: {
     gerName: 'das Taxi',
     fileName: 'taxi.webp',
-  },
-  TEETH: {
-    gerName: 'die Zähne',
-    fileName: 'teeth.webp',
   },
   THERMOS: {
     gerName: 'die Thermosflasche',
@@ -718,21 +658,21 @@ export const IMAGES = {
     gerName: 'der Kellner',
     fileName: 'waiter.webp',
   },
+  WAITRESS: {
+    gerName: 'der Kellnerin',
+    fileName: 'waiter.webp',
+  },
   WALLET: {
     gerName: 'die Brieftasche',
     fileName: 'wallet.webp',
-  },
-  WARNING: {
-    gerName: 'die Warnung',
-    fileName: 'warning.webp',
   },
   WATERMELON: {
     gerName: 'die Wassermelone',
     fileName: 'watermelon.webp',
   },
-  WELCOME: {
+  DOORMAT: {
     gerName: 'die Fußmatte',
-    fileName: 'welcome.webp',
+    fileName: 'doormat.webp',
   },
   WHISKY: {
     gerName: 'der Whisky',
@@ -783,7 +723,7 @@ export const IMAGES = {
     fileName: 'audio-book.webp',
   },
   AUTUMN: {
-    gerName: '',
+    gerName: 'der Herbst',
     fileName: 'autumn.webp',
   },
   BACK_YARD: {
@@ -795,7 +735,7 @@ export const IMAGES = {
     fileName: 'back.webp',
   },
   BACKPACK: {
-    gerName: '',
+    gerName: 'der Rucksack',
     fileName: 'backpack.webp',
   },
   BADMINTON: {
@@ -803,7 +743,7 @@ export const IMAGES = {
     fileName: 'badminton.webp',
   },
   BAGGAGE: {
-    gerName: '',
+    gerName: 'das Gepäck',
     fileName: 'baggage.webp',
   },
   BAKERY: {
@@ -815,16 +755,12 @@ export const IMAGES = {
     fileName: 'balcony.webp',
   },
   BAR_2: {
-    gerName: '',
+    gerName: 'die Bar',
     fileName: 'bar-2.webp',
   },
   BAR: {
-    gerName: '',
+    gerName: 'die Bar',
     fileName: 'bar.webp',
-  },
-  BASKETBALL_2: {
-    gerName: '',
-    fileName: 'basketball-2.webp',
   },
   BASKETBALL: {
     gerName: '',
@@ -851,7 +787,7 @@ export const IMAGES = {
     fileName: 'beer-glass.webp',
   },
   BIRKIN_BAG: {
-    gerName: '',
+    gerName: 'die Tasche',
     fileName: 'birkin-bag.webp',
   },
   BIRTHDAY_2: {
@@ -895,11 +831,11 @@ export const IMAGES = {
     fileName: 'bowl.webp',
   },
   BREAD_ROLL: {
-    gerName: '',
+    gerName: 'das Brötchen',
     fileName: 'bread-roll.webp',
   },
   BREAD: {
-    gerName: '',
+    gerName: 'das Brot',
     fileName: 'bread.webp',
   },
   BREAK_ROOM: {
@@ -915,7 +851,7 @@ export const IMAGES = {
     fileName: 'bridge.webp',
   },
   BROTHER: {
-    gerName: '',
+    gerName: 'der Bruder',
     fileName: 'brother.webp',
   },
   BUG_HOTEL: {
@@ -923,11 +859,11 @@ export const IMAGES = {
     fileName: 'bug-hotel.webp',
   },
   BULLET_TRAIN: {
-    gerName: '',
+    gerName: 'der Zug',
     fileName: 'bullet-train.webp',
   },
   BUS_STOP: {
-    gerName: '',
+    gerName: 'die Bushaltestelle',
     fileName: 'bus-stop.webp',
   },
   BUSINESS_CARD: {
@@ -943,7 +879,7 @@ export const IMAGES = {
     fileName: 'business-trip.webp',
   },
   CAFE: {
-    gerName: '',
+    gerName: 'das Cafe´',
     fileName: 'cafe.webp',
   },
   CAKE: {
@@ -951,7 +887,7 @@ export const IMAGES = {
     fileName: 'cake.webp',
   },
   CALENDAR: {
-    gerName: '',
+    gerName: 'der Kalender',
     fileName: 'calendar.webp',
   },
   CAR_CRASH: {
@@ -963,7 +899,7 @@ export const IMAGES = {
     fileName: 'carnaval.webp',
   },
   CARPET: {
-    gerName: '',
+    gerName: 'der Teppich',
     fileName: 'carpet.webp',
   },
   CATHEDRAL: {
@@ -975,19 +911,15 @@ export const IMAGES = {
     fileName: 'certificate.webp',
   },
   CHEESE: {
-    gerName: '',
+    gerName: 'der Käse',
     fileName: 'cheese.webp',
   },
   CHESS: {
     gerName: '',
     fileName: 'chess.webp',
   },
-  CHOCOLATE: {
-    gerName: '',
-    fileName: 'chocolate.webp',
-  },
   CINEMA: {
-    gerName: '',
+    gerName: 'das Kino',
     fileName: 'cinema.webp',
   },
   CLASSROOM: {
@@ -1002,9 +934,9 @@ export const IMAGES = {
     gerName: '',
     fileName: 'colleague.webp',
   },
-  COLLEGES: {
+  COLLEAGUES: {
     gerName: '',
-    fileName: 'colleges.webp',
+    fileName: 'colleagues.webp',
   },
   CONFERENCE_HALL: {
     gerName: '',
@@ -1107,7 +1039,7 @@ export const IMAGES = {
     fileName: 'exam.webp',
   },
   EXHIBITION: {
-    gerName: '',
+    gerName: 'die Ausstellung',
     fileName: 'exhibition.webp',
   },
   EYE: {
@@ -1119,7 +1051,7 @@ export const IMAGES = {
     fileName: 'face-mask.webp',
   },
   FATHER: {
-    gerName: '',
+    gerName: 'der Vater / Papa',
     fileName: 'father.webp',
   },
   FIELD: {
@@ -1135,7 +1067,7 @@ export const IMAGES = {
     fileName: 'firefighters-car.webp',
   },
   FITNESS_STUDIO: {
-    gerName: '',
+    gerName: 'das Fitnessstudio',
     fileName: 'fitness-studio.webp',
   },
   FLOOR: {
@@ -1190,12 +1122,12 @@ export const IMAGES = {
     gerName: '',
     fileName: 'graduate.webp',
   },
-  GRANDPA_2: {
-    gerName: '',
-    fileName: 'grandpa-2.webp',
+  GRANDPA: {
+    gerName: 'der Großvater / Opa',
+    fileName: 'grandpa.webp',
   },
   GRANDPARENTS: {
-    gerName: '',
+    gerName: 'die Großeltern',
     fileName: 'grandparents.webp',
   },
   GROCERY_BAG: {
@@ -1207,7 +1139,7 @@ export const IMAGES = {
     fileName: 'hair.webp',
   },
   HAIRSTYLIST: {
-    gerName: '',
+    gerName: 'die Friseur',
     fileName: 'hairstylist.webp',
   },
   HANDYMAN: {
@@ -1283,7 +1215,7 @@ export const IMAGES = {
     fileName: 'judo.webp',
   },
   JUICE: {
-    gerName: '',
+    gerName: 'der Saft',
     fileName: 'juice.webp',
   },
   KARAOKE: {
@@ -1295,7 +1227,7 @@ export const IMAGES = {
     fileName: 'ketchup.webp',
   },
   KEYBOARD: {
-    gerName: '',
+    gerName: 'das Tastatur',
     fileName: 'keyboard.webp',
   },
   KINDERGARTEN: {
@@ -1355,7 +1287,7 @@ export const IMAGES = {
     fileName: 'meadow.webp',
   },
   MEAT: {
-    gerName: '',
+    gerName: 'das Fleisch',
     fileName: 'meat.webp',
   },
   MEETING: {
@@ -1371,11 +1303,11 @@ export const IMAGES = {
     fileName: 'monkey.webp',
   },
   MOTHER: {
-    gerName: '',
+    gerName: 'die Mutter / Mama',
     fileName: 'mother.webp',
   },
   MUSEUM: {
-    gerName: '',
+    gerName: 'das Museum',
     fileName: 'museum.webp',
   },
   MUSICAL: {
@@ -1407,7 +1339,7 @@ export const IMAGES = {
     fileName: 'opera-mask.webp',
   },
   ORANGE: {
-    gerName: '',
+    gerName: 'die Orange',
     fileName: 'orange.webp',
   },
   PAINTING_NAILS: {
@@ -1419,7 +1351,7 @@ export const IMAGES = {
     fileName: 'pajamas.webp',
   },
   PARENTS: {
-    gerName: '',
+    gerName: 'die Eltern',
     fileName: 'parents.webp',
   },
   PARROT: {
@@ -1451,11 +1383,11 @@ export const IMAGES = {
     fileName: 'phone-market.webp',
   },
   PICTURE: {
-    gerName: '',
+    gerName: 'das Bild',
     fileName: 'picture.webp',
   },
   PIE: {
-    gerName: '',
+    gerName: 'der Kuchen',
     fileName: 'pie.webp',
   },
   PINEAPPLE: {
@@ -1511,7 +1443,7 @@ export const IMAGES = {
     fileName: 'presentation.webp',
   },
   PRINTER: {
-    gerName: '',
+    gerName: 'der Drucker',
     fileName: 'printer.webp',
   },
   PRODUCTION: {
@@ -1531,7 +1463,7 @@ export const IMAGES = {
     fileName: 'radiator.webp',
   },
   RAILWAY_STATION: {
-    gerName: '',
+    gerName: 'der Bahnsteig',
     fileName: 'railway-station.webp',
   },
   RAIN: {
@@ -1539,7 +1471,7 @@ export const IMAGES = {
     fileName: 'rain.webp',
   },
   RAW_FISH: {
-    gerName: '',
+    gerName: 'der Fisch',
     fileName: 'raw-fish.webp',
   },
   READING: {
@@ -1579,7 +1511,7 @@ export const IMAGES = {
     fileName: 'rowing.webp',
   },
   SALAD: {
-    gerName: '',
+    gerName: 'der Salat',
     fileName: 'salad.webp',
   },
   SANDWICH: {
@@ -1587,7 +1519,7 @@ export const IMAGES = {
     fileName: 'sandwich.webp',
   },
   SCREEN: {
-    gerName: '',
+    gerName: 'der Bildschirm',
     fileName: 'screen.webp',
   },
   SCUBA_DIVING: {
@@ -1607,11 +1539,11 @@ export const IMAGES = {
     fileName: 'shopping-mall.webp',
   },
   SIBLINGS: {
-    gerName: '',
+    gerName: 'die Geschwister',
     fileName: 'siblings.webp',
   },
   SISTER: {
-    gerName: '',
+    gerName: 'die Schwester',
     fileName: 'sister.webp',
   },
   SKETCHBOOK: {
@@ -1647,7 +1579,7 @@ export const IMAGES = {
     fileName: 'soda.webp',
   },
   SOUP: {
-    gerName: '',
+    gerName: 'die Suppe',
     fileName: 'soup.webp',
   },
   SOUVENIR: {
@@ -1659,7 +1591,7 @@ export const IMAGES = {
     fileName: 'spoon.webp',
   },
   SPRING: {
-    gerName: '',
+    gerName: 'der Frühling',
     fileName: 'spring.webp',
   },
   STAIR: {
@@ -1695,11 +1627,11 @@ export const IMAGES = {
     fileName: 'suit.webp',
   },
   SUITCASE: {
-    gerName: '',
+    gerName: 'der Koffer',
     fileName: 'suitcase.webp',
   },
   SUMMER: {
-    gerName: '',
+    gerName: 'der Sommer',
     fileName: 'summer.webp',
   },
   SUN: {
@@ -1707,7 +1639,7 @@ export const IMAGES = {
     fileName: 'sun.webp',
   },
   SWIMMING_POOL: {
-    gerName: '',
+    gerName: 'das Schwimmbad',
     fileName: 'swimming-pool.webp',
   },
   T_SHIRTS: {
@@ -1719,19 +1651,19 @@ export const IMAGES = {
     fileName: 'talking.webp',
   },
   TEA: {
-    gerName: '',
+    gerName: 'der Tee',
     fileName: 'tea.webp',
   },
   TEACHER: {
-    gerName: '',
+    gerName: 'der Lehrer',
     fileName: 'teacher.webp',
   },
   THEATER: {
-    gerName: '',
+    gerName: 'das Theater',
     fileName: 'theater.webp',
   },
   TOMATO: {
-    gerName: '',
+    gerName: 'die Tomate',
     fileName: 'tomato.webp',
   },
   TOOTH: {
@@ -1750,12 +1682,8 @@ export const IMAGES = {
     gerName: '',
     fileName: 'town-square.webp',
   },
-  TRAFFIC_LIGHT_2: {
-    gerName: '',
-    fileName: 'traffic-light-2.webp',
-  },
   TRAIN_PLATFORM: {
-    gerName: '',
+    gerName: 'der Bahnsteig',
     fileName: 'train-platform.webp',
   },
   TRAINEE: {
@@ -1782,17 +1710,13 @@ export const IMAGES = {
     gerName: '',
     fileName: 'valley.webp',
   },
-  VIDEOGAME_2: {
+  VIDEO_GAME: {
     gerName: '',
-    fileName: 'videogame-2.webp',
+    fileName: 'video_game.webp',
   },
   VILLAGE: {
     gerName: '',
     fileName: 'village.webp',
-  },
-  WAITRESS: {
-    gerName: '',
-    fileName: 'waitress.webp',
   },
   WALK: {
     gerName: '',
@@ -1823,7 +1747,7 @@ export const IMAGES = {
     fileName: 'window.webp',
   },
   WINTER: {
-    gerName: '',
+    gerName: 'deer Winter',
     fileName: 'winter.webp',
   },
   WORK_DINNING: {
@@ -1849,6 +1773,50 @@ export const IMAGES = {
   СHRISTMAS: {
     gerName: '',
     fileName: 'сhristmas.webp',
+  },
+  TEACHER_F: {
+    gerName: 'dir Lehrerin',
+    fileName: 'teacher-f.webp',
+  },
+  BED: {
+    gerName: 'das Bett',
+    fileName: 'bed.webp',
+  },
+  SOFA: {
+    gerName: 'das Sofa',
+    fileName: 'sofa.webp',
+  },
+  TABLE: {
+    gerName: 'der Tisch',
+    fileName: 'table.webp',
+  },
+  PROJECT_2: {
+    gerName: '',
+    fileName: 'project-2.webp',
+  },
+  CLOSET: {
+    gerName: 'der Schrank',
+    fileName: 'closet.webp',
+  },
+  SHELF: {
+    gerName: 'das Regal',
+    fileName: 'shelf.webp',
+  },
+  NECKLACE: {
+    gerName: 'die Kette',
+    fileName: 'necklace.webp',
+  },
+  MOBILE_PHONE: {
+    gerName: 'das Handy',
+    fileName: 'mobile-phone.webp',
+  },
+  PASSWORD: {
+    gerName: 'das Passwort',
+    fileName: 'password.webp',
+  },
+  MOUSE: {
+    gerName: 'die Maus',
+    fileName: 'mouse.webp',
   },
 };
 
