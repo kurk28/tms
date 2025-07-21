@@ -1,3 +1,10 @@
+export const IMAGE_BORDER_COLOR = {
+  RED: 'red',
+  GREEN: 'green',
+  BLUE: 'blue',
+  GREY: 'grey',
+};
+
 export const IMAGES = {
   AC: {
     gerName: 'die Klimaanlage',
@@ -36,7 +43,7 @@ export const IMAGES = {
     fileName: 'balloon-2.webp',
   },
   BAND: {
-    gerName: 'die Band',
+    gerName: 'die Musikinstrumente',
     fileName: 'band.webp',
   },
   BANANA: {
@@ -116,15 +123,15 @@ export const IMAGES = {
     fileName: 'car.webp',
   },
   CASTLE: {
-    gerName: 'das Schloss',
+    gerName: 'die Burg',
     fileName: 'castle.webp',
   },
   CASTLE_2: {
-    gerName: 'das Schloss',
+    gerName: 'die Burg',
     fileName: 'castle-2.webp',
   },
   CAT: {
-    gerName: 'die Katzen',
+    gerName: 'die Katze',
     fileName: 'cat.webp',
   },
   CHAIR: {
@@ -132,7 +139,7 @@ export const IMAGES = {
     fileName: 'chair.webp',
   },
   CHAIR_2: {
-    gerName: 'der Stuhl',
+    gerName: 'der Sessel',
     fileName: 'chair-2.webp',
   },
   CHEMISTRY: {
@@ -160,7 +167,7 @@ export const IMAGES = {
     fileName: 'christmas.webp',
   },
   CLEF: {
-    gerName: 'der Notenschlüssel',
+    gerName: 'der Doppelendschlüssel / der Maulschlüssel',
     fileName: 'clef.webp',
   },
   CLOCK: {
@@ -168,21 +175,21 @@ export const IMAGES = {
     fileName: 'clock.webp',
   },
   COFFEE: {
-    gerName: 'der Kaffee',
+    gerName: 'der Frappé',
     fileName: 'coffee.webp',
   },
   COFFEE_2: {
     gerName: 'der Kaffee',
     fileName: 'coffee-2.webp',
   },
-  COMB: {
-    gerName: 'der Kamm',
+  BRUSH: {
+    gerName: 'der Bürste',
     fileName: 'comb.webp',
   },
-  COMB_2: {
-    gerName: 'der Kamm',
-    fileName: 'comb-2.webp',
-  },
+  // COMB_2: {
+  //   gerName: 'der Kamm',
+  //   fileName: 'comb-2.webp',
+  // },
   COMPUTER: {
     gerName: 'der Computer',
     fileName: 'computer.webp',
@@ -196,7 +203,7 @@ export const IMAGES = {
     fileName: 'contract.webp',
   },
   CONTROLLER: {
-    gerName: 'der Controller',
+    gerName: 'die Fernbedienung',
     fileName: 'controller.webp',
   },
   COURIER: {
@@ -208,7 +215,7 @@ export const IMAGES = {
     fileName: 'cow.webp',
   },
   CRANE: {
-    gerName: 'der Kran',
+    gerName: 'der Kranich',
     fileName: 'crane.webp',
   },
   CUBE: {
@@ -288,7 +295,7 @@ export const IMAGES = {
     fileName: 'fire.webp',
   },
   FISHING: {
-    gerName: 'das Angeln',
+    gerName: 'die Angel',
     fileName: 'fishing.webp',
   },
   FLASHLIGHT: {
@@ -344,7 +351,7 @@ export const IMAGES = {
     fileName: 'heart.webp',
   },
   HEELS: {
-    gerName: 'die Absätze',
+    gerName: 'der Absatzschuh',
     fileName: 'heels.webp',
   },
   HOLLYWOOD: {
@@ -411,12 +418,12 @@ export const IMAGES = {
     gerName: 'die Wäsche',
     fileName: 'laundry.webp',
   },
-  LEARNING: {
-    gerName: 'das Lernen',
+  DEGREE: {
+    gerName: 'die Prüfung bestanden / der Abschluss',
     fileName: 'learning.webp',
   },
   LIKE: {
-    gerName: 'das Gefällt mir',
+    gerName: 'das gefällt mir',
     fileName: 'like.webp',
   },
   LOCK: {
@@ -427,8 +434,8 @@ export const IMAGES = {
     gerName: 'die Lokomotive',
     fileName: 'locomotive.webp',
   },
-  MAPS: {
-    gerName: 'die Karten',
+  MAP: {
+    gerName: 'die Karte',
     fileName: 'maps.webp',
   },
   MESSAGE: {
@@ -448,7 +455,7 @@ export const IMAGES = {
     fileName: 'moneybox.webp',
   },
   MOSQUITO: {
-    gerName: 'der Moskito',
+    gerName: 'die Mücke',
     fileName: 'mosquito.webp',
   },
   MOUNT: {
@@ -548,7 +555,7 @@ export const IMAGES = {
     fileName: 'ring.webp',
   },
   ROBOT_MAN: {
-    gerName: 'der Roboter-Mann',
+    gerName: 'der Robotermann',
     fileName: 'robot-man.webp',
   },
   ROSE: {
@@ -596,7 +603,7 @@ export const IMAGES = {
     fileName: 'skirt-2.webp',
   },
   SKUNK: {
-    gerName: 'der Stinktier',
+    gerName: 'das Stinktier',
     fileName: 'skunk.webp',
   },
   SNEAKERS: {
@@ -619,11 +626,11 @@ export const IMAGES = {
     gerName: 'der Sport',
     fileName: 'sport.webp',
   },
-  STAND_UP: {
-    gerName: 'das Stand-up',
+  COMEDY: {
+    gerName: 'die Komödie',
     fileName: 'stand-up.webp',
   },
-  STRONG: {
+  STRENGTH: {
     gerName: 'die Stärke',
     fileName: 'strong.webp',
   },
@@ -647,8 +654,8 @@ export const IMAGES = {
     gerName: 'das Tablet',
     fileName: 'tablet-2.webp',
   },
-  TABLETS: {
-    gerName: 'die Tabletten',
+  MEDICINE: {
+    gerName: 'die Medizin',
     fileName: 'tablets.webp',
   },
   TANK: {
@@ -668,7 +675,7 @@ export const IMAGES = {
     fileName: 'teeth.webp',
   },
   THERMOS: {
-    gerName: 'der Thermos',
+    gerName: 'die Thermosflasche',
     fileName: 'thermos.webp',
   },
   TIME: {
@@ -754,10 +761,3 @@ export const IMAGES = {
 };
 
 export const IMAGE_NAMES_ARR = Object.keys(IMAGES);
-
-export const IMAGE_BORDER_COLOR = {
-  RED: 'red',
-  GREEN: 'green',
-  BLUE: 'blue',
-  GREY: 'grey',
-};
