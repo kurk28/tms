@@ -43,6 +43,7 @@ function App() {
   };
 
   const onCacheImagesClick = async () => {
+    setCachedImagesCount(0);
     const notCachedImages = await cacheAllImages(IMAGE_NAMES_ARR);
     if (notCachedImages.length !== 0)
       console.warn('Not all images were cachedi: ', notCachedImages);
