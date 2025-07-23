@@ -33,6 +33,11 @@ export default defineConfig({
     alias: {
       '@src': resolve(__dirname, 'src'),
     },
+    extensions: ['.js', '.jsx'],
     conditions: ['development', 'browser'],
+  },
+  test: {
+    dir: './tests/unit/',
+    environment: 'jsdom',
   },
 });
