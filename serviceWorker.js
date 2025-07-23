@@ -1,9 +1,7 @@
-// version 0.0.1
-
-const CACHE_NAME = 'v1';
+const CACHE_VERSION = '0.0.1';
 
 function putInCache(req, res) {
-  return caches.open(CACHE_NAME).then((cache) => cache.put(req, res));
+  return caches.open(CACHE_VERSION).then((cache) => cache.put(req, res));
 }
 
 function fetchData(request, event) {
@@ -11,7 +9,7 @@ function fetchData(request, event) {
     .then((data) => {
       event.waitUntil(
         putInCache(request, data.clone()).catch((e) =>
-          console.warn('Failed o put in cache:', e)
+          console.warn('Failed to put in cache:', e)
         )
       );
       return data;
@@ -45,7 +43,7 @@ self.addEventListener('activate', (event) => {
         .then((keys) =>
           Promise.allSettled(
             keys
-              .filter((key) => key !== CACHE_NAME)
+              .filter((key) => key !== CACHE_VERSION)
               .map((key) => caches.delete(key))
           )
         )
