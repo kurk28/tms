@@ -114,10 +114,6 @@ export const IMAGES = {
     gerName: 'die Kamera',
     fileName: 'camera.webp',
   },
-  // CAMERA_2: {
-  //   gerName: 'die Kamera',
-  //   fileName: 'camera-2.webp',
-  // },
   CAR: {
     gerName: 'das Auto',
     fileName: 'car.webp',
@@ -174,13 +170,9 @@ export const IMAGES = {
     gerName: 'der Kaffee',
     fileName: 'coffee.webp',
   },
-  BRUSH: {
-    gerName: 'der Bürste',
-    fileName: 'comb.webp',
-  },
-  // COMB_2: {
-  //   gerName: 'der Kamm',
-  //   fileName: 'comb-2.webp',
+  // BRUSH: {
+  //   gerName: 'der Bürste',
+  //   fileName: 'comb.webp',
   // },
   COMPUTER: {
     gerName: 'der Computer',
@@ -343,7 +335,7 @@ export const IMAGES = {
     fileName: 'heels.webp',
   },
   HOLLYWOOD: {
-    gerName: '​der Berühmtheit',
+    gerName: 'der Berühmtheit',
     fileName: 'hollywood.webp',
   },
   HONEY: {
@@ -660,7 +652,7 @@ export const IMAGES = {
   },
   WAITRESS: {
     gerName: 'der Kellnerin',
-    fileName: 'waiter.webp',
+    fileName: 'waitress.webp',
   },
   WALLET: {
     gerName: 'die Brieftasche',
@@ -879,7 +871,7 @@ export const IMAGES = {
     fileName: 'business-trip.webp',
   },
   CAFE: {
-    gerName: 'das Cafe´',
+    gerName: 'das Cafe',
     fileName: 'cafe.webp',
   },
   CAKE: {
@@ -1046,10 +1038,6 @@ export const IMAGES = {
     gerName: 'das Auge',
     fileName: 'eye.webp',
   },
-  // FACE_MASK: {
-  //   gerName: '',
-  //   fileName: 'face-mask.webp',
-  // },
   FATHER: {
     gerName: 'der Vater / Papa',
     fileName: 'father.webp',
@@ -1059,7 +1047,7 @@ export const IMAGES = {
     fileName: 'field.webp',
   },
   FINGER: {
-    gerName: 'deer Finger',
+    gerName: 'der Finger',
     fileName: 'finger.webp',
   },
   FIREFIGHTERS_CAR: {
@@ -1122,18 +1110,18 @@ export const IMAGES = {
     gerName: 'der Abschluss',
     fileName: 'graduate.webp',
   },
-  GRANDPA: {
+  GRANDFATHER: {
     gerName: 'der Großvater / Opa',
-    fileName: 'grandpa.webp',
+    fileName: 'grandfather.webp',
+  },
+  GRANDMOTHER: {
+    gerName: 'der Großmutter / Oma',
+    fileName: 'grandmother.webp',
   },
   GRANDPARENTS: {
     gerName: 'die Großeltern',
     fileName: 'grandparents.webp',
   },
-  // GROCERY_BAG: {
-  //   gerName: '',
-  //   fileName: 'grocery-bag.webp',
-  // },
   HAIR: {
     gerName: 'die Haare',
     fileName: 'hair.webp',
@@ -1242,10 +1230,6 @@ export const IMAGES = {
     gerName: 'die Küche',
     fileName: 'kitchen.webp',
   },
-  // KIWI: {
-  //   gerName: '',
-  //   fileName: 'kiwi.webp',
-  // },
   LAW: {
     gerName: 'das Ge­setz',
     fileName: 'law.webp',
@@ -1274,10 +1258,6 @@ export const IMAGES = {
     gerName: 'die Zaubershow',
     fileName: 'magic-show.webp',
   },
-  // MAKEUP: {
-  //   gerName: '',
-  //   fileName: 'makeup.webp',
-  // },
   MARKET: {
     gerName: 'der Marktplatz',
     fileName: 'market.webp',
@@ -1342,10 +1322,6 @@ export const IMAGES = {
     gerName: 'die Orange',
     fileName: 'orange.webp',
   },
-  // PAINTING_NAILS: {
-  //   gerName: '',
-  //   fileName: 'painting-nails.webp',
-  // },
   PAJAMAS: {
     gerName: 'der Pyjama',
     fileName: 'pajamas.webp',
@@ -1359,7 +1335,7 @@ export const IMAGES = {
     fileName: 'parrot.webp',
   },
   PASSPORT: {
-    gerName: 'deer Pass',
+    gerName: 'der Pass',
     fileName: 'passport.webp',
   },
   PATCH: {
@@ -1418,10 +1394,6 @@ export const IMAGES = {
     gerName: 'die Polizei',
     fileName: 'police-car.webp',
   },
-  // POPSICLE: {
-  //   gerName: '',
-  //   fileName: 'popsicle.webp',
-  // },
   POST_OFFICE: {
     gerName: 'die Post',
     fileName: 'post-office.webp',
@@ -1454,10 +1426,6 @@ export const IMAGES = {
     gerName: 'das Project',
     fileName: 'project.webp',
   },
-  // PROTEST: {
-  //   gerName: '',
-  //   fileName: 'protest.webp',
-  // },
   RADIATOR: {
     gerName: 'die Heizung',
     fileName: 'radiator.webp',
@@ -1526,10 +1494,6 @@ export const IMAGES = {
     gerName: 'das Tauchen',
     fileName: 'scuba-diving.webp',
   },
-  // SECRETARY: {
-  //   gerName: 'die Sekretär',
-  //   fileName: 'secretary.webp',
-  // },
   SHIRT: {
     gerName: 'das Hemd',
     fileName: 'shirt.webp',
@@ -1646,10 +1610,6 @@ export const IMAGES = {
     gerName: 'das T-Shirt',
     fileName: 't-shirts.webp',
   },
-  // TALKING: {
-  //   gerName: '',
-  //   fileName: 'talking.webp',
-  // },
   TEA: {
     gerName: 'der Tee',
     fileName: 'tea.webp',
@@ -1747,7 +1707,7 @@ export const IMAGES = {
     fileName: 'window.webp',
   },
   WINTER: {
-    gerName: 'deer Winter',
+    gerName: 'der Winter',
     fileName: 'winter.webp',
   },
   WORK_DINNING: {
@@ -1829,3 +1789,4 @@ export const IMAGES = {
 };
 
 export const IMAGE_NAMES_ARR = Object.keys(IMAGES);
+console.log(IMAGE_NAMES_ARR);
