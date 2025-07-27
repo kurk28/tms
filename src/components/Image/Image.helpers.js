@@ -871,7 +871,7 @@ export const IMAGES = {
     fileName: 'business-trip.webp',
   },
   CAFE: {
-    gerName: 'das Cafe',
+    gerName: 'das Cafè',
     fileName: 'cafe.webp',
   },
   CAKE: {
