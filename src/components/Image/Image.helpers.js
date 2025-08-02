@@ -170,10 +170,6 @@ export const IMAGES = {
     gerName: 'der Kaffee',
     fileName: 'coffee.webp',
   },
-  // BRUSH: {
-  //   gerName: 'der Bürste',
-  //   fileName: 'comb.webp',
-  // },
   COMPUTER: {
     gerName: 'der Computer',
     fileName: 'computer.webp',
@@ -390,10 +386,6 @@ export const IMAGES = {
     gerName: 'der Laptop',
     fileName: 'laptop.webp',
   },
-  // DEGREE: {
-  //   gerName: 'die Prüfung bestanden / der Abschluss',
-  //   fileName: 'learning.webp',
-  // },
   LIKE: {
     gerName: 'das gefällt mir',
     fileName: 'like.webp',
@@ -702,10 +694,10 @@ export const IMAGES = {
     gerName: 'der Flughafen',
     fileName: 'airport-terminal.webp',
   },
-  // APARTMENT_BUILDING: {
-  //   gerName: '',
-  //   fileName: 'apartment-building.webp',
-  // },
+  APARTMENT_BUILDING: {
+    gerName: 'die Wohnung',
+    fileName: 'apartment-building.webp',
+  },
   ARCHITECT: {
     gerName: 'der Architekt',
     fileName: 'architect.webp',
@@ -814,10 +806,6 @@ export const IMAGES = {
     gerName: 'die Chefin',
     fileName: 'boss.webp',
   },
-  // BOTTLE_OF_WATER: {
-  //   gerName: '',
-  //   fileName: 'bottle-of-water.webp',
-  // },
   BOWL: {
     gerName: 'die Schüssel',
     fileName: 'bowl.webp',
@@ -1134,14 +1122,10 @@ export const IMAGES = {
     gerName: 'der Hausmeister',
     fileName: 'handyman.webp',
   },
-  // HANGER_2: {
-  //   gerName: '',
-  //   fileName: 'hanger-2.webp',
-  // },
-  // HANGER: {
-  //   gerName: '',
-  //   fileName: 'hanger.webp',
-  // },
+  HANGER: {
+    gerName: 'der Kleiderbügel',
+    fileName: 'hanger.webp',
+  },
   HEALTH_INSURANCE: {
     gerName: 'die Gesundheitskarte',
     fileName: 'health-insurance.webp',
@@ -1274,10 +1258,6 @@ export const IMAGES = {
     gerName: 'die Besprechung',
     fileName: 'meeting.webp',
   },
-  // MELON_PAN: {
-  //   gerName: '',
-  //   fileName: 'melon-pan.webp',
-  // },
   MONKEY: {
     gerName: 'der Affe',
     fileName: 'monkey.webp',
@@ -1686,10 +1666,6 @@ export const IMAGES = {
     gerName: 'der Kleiderschrank',
     fileName: 'wardrobe.webp',
   },
-  WATER_BOTTLE: {
-    gerName: 'die Wasserflasche',
-    fileName: 'water-bottle.webp',
-  },
   WATER_GLASS: {
     gerName: 'das Glas',
     fileName: 'water-glass.webp',
@@ -1789,4 +1765,3 @@ export const IMAGES = {
 };
 
 export const IMAGE_NAMES_ARR = Object.keys(IMAGES);
-console.log(IMAGE_NAMES_ARR);
