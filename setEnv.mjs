@@ -15,7 +15,7 @@ const imageFolderSize = execSync('cd public/images && du -sh')
   .trim();
 existingVars.VITE_IMAGE_FOLDER_SIZE = imageFolderSize;
 
-const imageCount = execSync('cd public/images && find . -type f | wc -l')
+const imageCount = execSync('cd public/images && find . -type f -name "*.webp" | wc -l')
   .toString()
   .trim();
 existingVars.VITE_IMAGE_COUNT = imageCount;

@@ -1,16 +1,14 @@
-const CACHE_VERSION = '0.0.1';
+const CACHE_VERSION = '0.0.2';
 
 function putInCache(req, res) {
   return caches.open(CACHE_VERSION).then((cache) => cache.put(req, res));
 }
 
-function fetchData(request, event) {
+function fetchData(request) {
   return fetch(request)
     .then((data) => {
-      event.waitUntil(
-        putInCache(request, data.clone()).catch((e) =>
-          console.warn('Failed to put in cache:', e)
-        )
+      putInCache(request, data.clone()).catch((e) =>
+        console.warn('Failed to put in cache:', e)
       );
       return data;
     })
@@ -29,9 +27,9 @@ function fetchData(request, event) {
     });
 }
 
-self.addEventListener('install', () => {
+self.addEventListener('install', (event) => {
   console.info('Service worker installed');
-  self.skipWaiting();
+  event.waitUntil(self.skipWaiting());
 });
 
 self.addEventListener('activate', (event) => {
@@ -59,10 +57,10 @@ self.addEventListener('fetch', function (event) {
   if (shouldBeCached) {
     event.respondWith(
       caches.match(event.request).then((cachedData) => {
-        return cachedData ? cachedData : fetchData(event.request, event);
+        return cachedData ? cachedData : fetchData(event.request);
       })
     );
   } else {
-    event.respondWith(fetchData(event.request, event));
+    event.respondWith(fetchData(event.request));
   }
 });

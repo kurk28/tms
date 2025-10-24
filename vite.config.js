@@ -22,7 +22,7 @@ export default defineConfig({
       output: {
         entryFileNames: (chunkInfo) => {
           if (chunkInfo.name === 'serviceWorker') {
-            return 'assets/serviceWorker.js';
+            return 'serviceWorker.js';
           }
           return 'assets/[name]-[hash].js';
         },
